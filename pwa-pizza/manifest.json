@@ -1,0 +1,27 @@
+{
+    "name": "Localizador de Pizzarias",
+    "short_name": "pizza-pwa",
+    "icons": [
+        {
+            "src": "img/pwa-icon-256.jpg",
+            "sizes": "256x256",
+            "type": "image/jpg"
+        },
+        {
+            "src": "img/pwa-icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "img/pwa-icon-256.jpg",
+            "sizes": "256x256",
+            "type": "image/jpg",
+            "purpose": "any maskable"
+        }
+    ],
+    "lang": "pt-BR",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white"
+}

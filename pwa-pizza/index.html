@@ -9,36 +9,27 @@
     <meta name="theme-color" content="white" />
     <title>gps de pizza</title>
   </head>
-  <body>
-    <section class="container">
-      <header class="cabecalho">
-        <h1 class="titulo">Localizar Pizzarias</h1>
-      </header>
-      <div class="conteudo">
-        <header class="cabecalhoConteudo">
-          <h2>Geolocalização</h2>
-        </header>
-        <div class="conteudoLocalizacao">
-          <p>
-            Latitude: <span id="latitude">0.0</span>
-          </p>
-          <p>
-            Logitude: <span id="longitude">0.0</span>
-          </p>
-          <div>
-            <button class="botao" id="localizacao">Capturar Localização</button>
-          </div>
+  <body class="fullscreen">
+    <div class="container">
+        <h1 class="title">Cadastre sua pizzaria</h1>
+        <div style="text-align: center;">
+            <img src="/img/pwa-icon-256.jpg" alt="pwa" width="256" height="256">
         </div>
-      </div>
-      <div class="mapouter">
-        <div class="gmap_canvas">
-          <iframe id="mapa" class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            src="http://maps.google.com/maps?q=25.3076008,51.4803216&z=16&output=embed">
-          </iframe>
+        <div id="entrada">
+            <h1>Cadastrar</h1>
+            <input type="text" id="titulo" placeholder="Nome da Pizzaria">
+            <input type="text" id="latitude" placeholder="latitude"/><br/>
+            <input type="text" id="longitude" placeholder="longitude"/><br/>
+            <input type="date" id="data">
+            <button id="btnCadastro">Cadastrar</button>
+            <button id="btnCarregar">Carregar Minhas Anotações</button>
         </div>
-      </div>
-    </section>
+        <div id="resultados"></div>
+        <center><div id="mapa"></div></center>
+    </div>
     <script type="module" src="js/main.js"></script>
-  </body>
+    <script type="module" src="js/db.js"></script>
+</body>
+
 </html>
 
